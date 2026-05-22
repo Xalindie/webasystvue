@@ -14,6 +14,7 @@ import {
     ChipsPage,
     ContentPage,
     FlexboxPage,
+    FoundABug,
     GettingStartedPage,
     HeadingPage,
     IconPage,
@@ -51,6 +52,11 @@ const router = createRouter({
                     path: 'getting-started',
                     component: GettingStartedPage,
                     name: 'docs-getting-started',
+                },
+                {
+                    path: 'found-a-bug',
+                    component: FoundABug,
+                    name: 'docs-found-a-bug',
                 },
                 {
                     path: 'alert',
