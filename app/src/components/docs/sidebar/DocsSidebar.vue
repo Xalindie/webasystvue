@@ -34,6 +34,22 @@
                         </MenuItem>
                     </MenuSection>
                 </router-link>
+                <router-link
+                    v-slot="{ href, navigate, isActive }"
+                    :to="{ name: 'docs-found-a-bug' }"
+                    custom
+                >
+                    <MenuSection :selected="isActive">
+                        <MenuItem
+                            as="a"
+                            :href="href"
+                            @click="navigate"
+                        >
+                            <i class="fas fa-bug"/>
+                            <span>Нашли ошибку?</span>
+                        </MenuItem>
+                    </MenuSection>
+                </router-link>
             </Menu>
         </SidebarHeader>
         <hr class="custom-mb-0">
